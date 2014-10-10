@@ -1,6 +1,6 @@
 public class HelloWorld{
 	
 	public static void main(String[] args){
-		System.out.println("LOskutov Yuri Aleksandrovich");
+		System.out.println("Loskutov Yuri Aleksandrovich");
 	}
 }
