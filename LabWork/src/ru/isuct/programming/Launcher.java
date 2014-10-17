@@ -15,5 +15,11 @@ public class Launcher {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        SimpleTypes sType= new SimpleTypes();
+        sType.demo ();
+        SimpleArray sArray=new SimpleArray();
+        sArray.demo();
+        
+        
     }
 }
