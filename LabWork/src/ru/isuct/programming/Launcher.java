@@ -10,10 +10,14 @@ package ru.isuct.programming;
  * @author jskonst
  */
 public class Launcher {
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SimpleTypes sTypes = new SimpleTypes();
+        sTypes.demo();
+        SimpleArray sArray = new SimpleArray();
+        sArray.demo();
     }
 }
