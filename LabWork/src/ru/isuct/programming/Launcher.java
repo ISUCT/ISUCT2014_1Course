@@ -19,5 +19,8 @@ public class Launcher {
         SimpleArray  sArray = new SimpleArray();
         sArray.demo();
         // TODO code application logic here
+        Bag b1 = new Bag();
+        b1.setName("sumka");
+        System.out.println(b1.getName());
     }
 }

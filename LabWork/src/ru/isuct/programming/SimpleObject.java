@@ -11,4 +11,5 @@ package ru.isuct.programming;
  */
 public class SimpleObject {
     
+    
 }
