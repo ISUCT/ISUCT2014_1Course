@@ -14,6 +14,11 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Rocket vostok = new Rocket();
+        vostok.setName("Vostok");
+        vostok.sayHello();
+        vostok.setSpeed(23);
+        int spd = vostok.getSpeed();
+        System.out.println("Speed = "+ spd);
     }
 }
