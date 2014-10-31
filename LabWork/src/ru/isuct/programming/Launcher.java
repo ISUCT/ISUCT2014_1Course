@@ -14,7 +14,12 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SimpleTypes aTypes = new SimpleTypes();
-        aTypes.demo();
+        SimpleTypes sTypes = new SimpleTypes();
+        sTypes.demo ();
+        SimpleArray sArray = new SimpleArray();
+        sArray.demo();
+       
+       
+
     }
 }

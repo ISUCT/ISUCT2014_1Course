@@ -11,7 +11,7 @@ package ru.isuct.programming;
  */
 public class SimpleTypes {
 
-    public void demo(){
+               public void demo(){
           boolean aJ = true;
           System.out.println("boolean " + aJ);
           char bJ = 65534;
