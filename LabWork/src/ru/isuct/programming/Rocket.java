@@ -12,7 +12,7 @@ package ru.isuct.programming;
 public class Rocket {
     private String name = "";
     private int speed;
-    private int fuelLevel;
+    private int fuelLevel = 100;
     private String greeting = "Poexali";
     
     public void setName(String aName){
@@ -34,4 +34,9 @@ public class Rocket {
     public void sayHello(){
         System.out.println(name + " " + greeting );
     }
+    public int getFuel(){
+        fuelLevel = fuelLevel - speed/10;
+        return fuelLevel;
+    } 
+   
 }
