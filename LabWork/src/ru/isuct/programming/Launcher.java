@@ -20,6 +20,7 @@ public class Launcher {
         SimpleArray sArray=new SimpleArray();
         sArray.demo();
         
-     
+     Calc myCalc = new Calc();
+     myCalc.taskBSimple();
     }
 }
