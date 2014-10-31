@@ -18,8 +18,14 @@ public class Launcher {
         sTypes.demo ();
         SimpleArray sArray = new SimpleArray();
         sArray.demo();
-       
-       
-
-    }
+        
+        Car Mersedes = new Car();
+        Mersedes.setName("Mersedes");
+        Mersedes.sayHello();
+        Mersedes.setSpeed(60);
+        int spd = Mersedes.getSpeed();
+        System.out.println("Speed = "+ spd);
+  
+      }
 }
+

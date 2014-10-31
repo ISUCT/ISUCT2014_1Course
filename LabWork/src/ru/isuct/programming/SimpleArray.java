@@ -18,8 +18,9 @@ public class SimpleArray {
           arr[3] = 4;
           arr[4] = 5;
           int x = 0;
-         while (x < arr.length) 
+         while (x < arr.length) {
            System.out.println("arr["+x+" = "+ arr[x]);
-         x = x + 1;             
+         x = x + 1; 
+         }
     }
 }

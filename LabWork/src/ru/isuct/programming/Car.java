@@ -21,7 +21,9 @@ public class Car {
      public String getName(){
               return name;
      }
-     
+     public void setSpeed(int aSpeed){
+         speed = aSpeed;
+     }
      public int getSpeed(){
          return speed;
        
