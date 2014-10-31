@@ -19,5 +19,12 @@ public class Launcher {
         SimpleArray sArray = new SimpleArray();
         sArray.demo();
         // TODO code application logic here
+        Dog myDog = new Dog();
+         Dog Gera = new Dog();
+        Gera.setName("Gera");
+        Gera.sayHello();
+        Gera.setAge(5);
+        int spd = Gera.getAge();
+        System.out.println("Age = "+ spd);
     }
 }
