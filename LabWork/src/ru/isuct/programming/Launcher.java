@@ -15,9 +15,11 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SimpleTypes sTypes = new SimpleTypes();
-        sTypes.demo();
-        SimpleArray sArray = new SimpleArray();
-        sArray.demo();
+        Rabbit krolik = new Rabbit();
+        krolik.setName("krolik");
+        krolik.sayHello();
+        krolik.setAge(2);
+        int spd = krolik.getAge();
+        System.out.println("age= " + spd);
     }
 }
