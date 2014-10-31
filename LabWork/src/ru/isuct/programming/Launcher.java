@@ -21,5 +21,11 @@ public class Launcher {
         sArray.demo();
         
         
+        
+        
+        Calc myCalc = new Calc();
+         myCalc.taskBSimple();
+        
+        
     }
 }
