@@ -14,6 +14,9 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        Calc myCalc = new Calc();
+        myCalc.taskBSimple();
         // TODO code application logic here
     }
 }
