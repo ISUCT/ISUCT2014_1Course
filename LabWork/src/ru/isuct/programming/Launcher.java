@@ -10,6 +10,7 @@ package ru.isuct.programming;
  * @author jskonst
  */
 public class Launcher {
+
     /**
      * @param args the command line arguments
      */
@@ -22,10 +23,12 @@ public class Launcher {
         Camera myCam = new Camera();
         myCam.sayHello();
         Camera Panasonik = new Camera();
- Panasonik.setName("Panasonik");
- Panasonik.sayHello();
- Panasonik.setPicturenumber(5);
- int spd = Panasonik.getPicturenumber();
- System.out.println("Picturenumber = "+ spd);
+        Panasonik.setName("Panasonik");
+        Panasonik.sayHello();
+        Panasonik.setPicturenumber(5);
+        int spd = Panasonik.getPicturenumber();
+        System.out.println("Picturenumber = " + spd);
+        Calc my = new Calc();
+        my.taskSimple();
     }
 }
