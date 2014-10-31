@@ -22,5 +22,8 @@ public class Launcher {
         Bag b1 = new Bag();
         b1.setName("sumka");
         System.out.println(b1.getName());
+        
+       Calc myCalc = new Calc();
+        myCalc.taskBSimple();
     }
 }
