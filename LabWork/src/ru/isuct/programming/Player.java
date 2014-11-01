@@ -7,31 +7,28 @@ package ru.isuct.programming;
 
 /**
  *
- * @author user
+ * @author Администратор
  */
-public class Rocket {
+public class Player {
     private String name = "";
-    private int speed;
-    private int fuelLevel;
-    private String greeting = "Poexali";
+    private int titleofsong;
+    private int numberofbuttons;
+    private int size;
+    private String greeting = "Hello, man";
     
     public void setName(String aName){
         name = aName;
     }
-    
     public String getName(){
         return name;
     }
-    
-    public void setSpeed(int aSpeed){
-        speed = aSpeed;
+    public void setTitleofsong(int aTitleofsong){
+        titleofsong = aTitleofsong;
     }
-    
-    public int getSpeed(){
-        return speed;
+    public int getTitleofsong(){
+        return titleofsong;
     }
-    
     public void sayHello(){
-        System.out.println(name + " " + greeting );
+        System.out.println(name + ' ' + greeting );
     }
 }
