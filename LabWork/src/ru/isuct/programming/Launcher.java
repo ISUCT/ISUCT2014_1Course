@@ -21,6 +21,8 @@ public class Launcher {
       SimpleArray eArray = new SimpleArray ();
       eArray.demo ();
      
+      Calc myCalc = new Calc();
+      myCalc.taskBSimple();
         // TODO code application logic here
 
       Player panasonic = new Player();
