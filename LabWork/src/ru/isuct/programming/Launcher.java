@@ -18,6 +18,9 @@ public class Launcher {
         sTypes.demo();
         SimpleArray sArray = new SimpleArray();
         sArray.demo();
-        // TODO code application logic here
+
+        Calc myCalc = new Calc();
+        myCalc.taskBSimple();
+        
     }
 }
