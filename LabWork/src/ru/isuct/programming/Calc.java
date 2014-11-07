@@ -73,4 +73,17 @@ public class Calc {
             System.out.println("x=" + x + " , y=" + y);
         }
     }
+        
+    public void taskBImproved(double a, double b, double[] x) {
+// Вычисляем таблицу значений функции 
+//    a^x-b^x
+//y=-----------*(a*b)^1/3
+//   log(a/b)по основанию 10
+// для точек передаваемых в массиве x
+for (int i = 0; i < x. length; i++){
+double y = calcFunction(a, b, x[i]);
+System.out.println("x=" + x[i] + " , y=" + y);
+    }
+    }
 }
+        
