@@ -10,7 +10,8 @@ package ru.isuct.programming;
  * @author user
  */
 public class Calc {
-    public void taskBSimple(){
+
+    public void taskBSimple() {
         // Вычисляем таблицу значений функции
         //     (sin(x)^2 + корень 3 степени a *x -b)
         // у =  -------------------------------------
@@ -25,27 +26,27 @@ public class Calc {
         double a = 2.8;
         double b = 2.5;
         double x = 2;
-        double chisl = Math.pow(Math.sin(x),2) + Math.pow((a*x -b),(1/3));
-        double znamen = (Math.log(x))/(Math.log(5));
-        double y = chisl/znamen;
-        System.out.println("x="+x+" , y="+y);
-        
+        double y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
         x = 3;
-        chisl = Math.pow(Math.sin(x),2) + Math.pow((a*x -b),(1/3));
-        znamen = (Math.log(x))/(Math.log(5));
-        y = chisl/znamen;
-        System.out.println("x="+x+" , y="+y);
-        
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
         x = 4;
-        chisl = Math.pow(Math.sin(x),2) + Math.pow((a*x -b),(1/3));
-        znamen = (Math.log(x))/(Math.log(5));
-        y = chisl/znamen;
-        System.out.println("x="+x+" , y="+y);
-        
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
         x = 5;
-        chisl = Math.pow(Math.sin(x),2) + Math.pow((a*x -b),(1/3));
-        znamen = (Math.log(x))/(Math.log(5));
-        y = chisl/znamen;
-        System.out.println("x="+x+" , y="+y);
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
     }
+
+    private double calcFunction(double a, double b, double x) {
+        double chisl = Math.pow(Math.sin(x), 2) + Math.pow((a * x - b), (1 / 3));
+        double znamen = (Math.log(x)) / (Math.log(5));
+        double y = chisl / znamen;
+        return y;
+    }
+
 }
