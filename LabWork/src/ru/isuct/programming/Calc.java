@@ -72,4 +72,17 @@ public class Calc {
             System.out.println("x=" + x + " , y=" + y);
         }
     }
+
+    public void taskBImproved(double a, double b, double[] x) {
+        // Вычисляем таблицу значений функции
+        //   (a+(tg)^2*b*x)
+        //y=  -------------
+        //   (B+(ctg)^2*a*x)
+        // для точек передаваемых в массиве x
+        for (int i = 0; i < x.length; i += 1) {
+            double y = calcFunction(a, b, x[i]);
+            System.out.println("x=" + x[i] + " , y=" + y);
+        }
+
+    }
 }
