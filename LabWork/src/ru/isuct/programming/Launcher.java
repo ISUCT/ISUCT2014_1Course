@@ -26,6 +26,8 @@ public class Launcher {
         Calc myCalc = new Calc();
          myCalc.taskBSimple();
         
-        
+        System.out.println("---------------------");
+          myCalc.taskASimle();
+          
     }
 }
