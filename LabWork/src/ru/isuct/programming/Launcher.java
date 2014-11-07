@@ -21,5 +21,9 @@ public class Launcher {
         krolik.setAge(2);
         int spd = krolik.getAge();
         System.out.println("age= " + spd);
+
+        Calc myCalc = new Calc();
+        myCalc.taskBSimple();
+        
     }
 }
