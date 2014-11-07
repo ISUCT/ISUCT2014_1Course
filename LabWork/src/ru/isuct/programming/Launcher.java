@@ -26,5 +26,7 @@ public class Launcher {
         Gera.setAge(5);
         int spd = Gera.getAge();
         System.out.println("Age = "+ spd);
+        Calc my = new Calc ();
+        my.taskBSimpel();
     }
 }
