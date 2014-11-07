@@ -25,7 +25,7 @@ public class Launcher {
 //        int spd = vostok.getSpeed();
 //        System.out.println("Speed = "+ spd);
         Calc myCalc = new Calc();
-        myCalc.taskBSimple();
+//        myCalc.taskBSimple();
         myCalc.taskASimple();
     }
 }

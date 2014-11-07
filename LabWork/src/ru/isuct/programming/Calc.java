@@ -11,7 +11,7 @@ package ru.isuct.programming;
  */
 public class Calc {
 
-    public void taskBSimple() {
+    public void taskBImproved(double a,double b,double[] x) {
         // Вычисляем таблицу значений функции
         //     (sin(x)^2 + корень 3 степени a *x -b)
         // у =  -------------------------------------
@@ -23,26 +23,10 @@ public class Calc {
         // x = 3
         // x = 4 
         // x = 5
-        double a = -2.5;
-        double b = 6.3;
-        double x = 5.25;
-        double y = calcFunction(a, b, x);
-        System.out.println("x=" + x + " , y=" + y);
-
-        a = -2.5;
-        x = 6.45;
-        y = Math.pow((Math.log(Math.pow(a, 2) + x)), 2);
-        System.out.println("x=" + x + " , y=" + y);
-
-        a = -2.5;
-        x = 7.24;
-        y = Math.pow((Math.log(Math.pow(a, 2) + x)), 2);
-        System.out.println("x=" + x + " , y=" + y);
-
-        a = -2.5;
-        x = 7.87;
-        y = Math.pow((Math.log(Math.pow(a, 2) + x)), 2);
-        System.out.println("x=" + x + " , y=" + y);
+        for (int i = 0; i > x.length; i +=1){
+            double y = calcFunction(a ,b , x[i]);
+            System.out.println("x=" + x[i] +",y=" + y);
+        }
     }
 
     private double calcFunction(double a, double b, double x) {
