@@ -42,6 +42,19 @@ public class Calc {
         System.out.println("x=" + x + " , y=" + y);
     }
 
+    public void taskBImproved(double a, double b, double[] x) {
+        // Вычисляем таблицу значений функции
+        //     (sin(x)^2 + корень 3 степени a *x -b)
+        // у =  -------------------------------------
+        //              log x по основанию 5
+        // для точек передаваемых в массиве х
+        for (int i = 0; i < x.length; i+=1) {
+            double y = calcFunction(a, b, x[i]);
+            System.out.println("x=" + x[i] + " , y=" + y);
+        }
+
+    }
+
     public void taskASimple() {
         // Вычисляем таблицу значений функции
         //     (sin(x)^2 + корень 3 степени a *x -b)
@@ -56,7 +69,7 @@ public class Calc {
         double xk = 10;
         double dx = 1;
 
-        for(double x = xn; x <= xk; x = x + dx) { // x = x + dx === x+=dx
+        for (double x = xn; x <= xk; x = x + dx) { // x = x + dx === x+=dx
             double y = calcFunction(a, b, x);
             System.out.println("x=" + x + " , y=" + y);
         }
