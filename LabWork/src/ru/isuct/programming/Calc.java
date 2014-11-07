@@ -10,55 +10,36 @@ package ru.isuct.programming;
  * @author user
  */
 public class Calc {
-    public void taskBSimple(){
+
+    public void taskBImproved(double[] x) {
         // Вычисляем таблицу значений функции
         //     y = ((arcsin в квадрате)X + (arccos в степени 4)Х)в кубе
         //------------------------------------------------
 
-        double x = 0.1;
-
-        double y = Math.pow((Math.pow((Math.asin(x)),2))+
-                            (Math.pow((Math.acos(x)),4)),
-                            3) ;
-        System.out.println("x="+x+" , y="+y);
-        
+        for (int i = 0; i < x.length; i++) {
+            double y = calcFunction(x[i]);
+            System.out.println("x=" + i + " , y=" + y);
+        }
         //----------------------------------------------
-        x = 0.35;
-
-        y = Math.pow((Math.pow((Math.asin(x)),2))+
-                     (Math.pow((Math.acos(x)),4)),
-                     3) ;
-        System.out.println("x="+x+" , y="+y);
-        
-        //------------------------------------------------------
-        
-        x = 0.4;
-
-        y = Math.pow((Math.pow((Math.asin(x)),2))+
-                     (Math.pow((Math.acos(x)),4)),
-                     3) ;
-        System.out.println("x="+x+" , y="+y);
-        
-        //--------------------------------------------------------------
-        
-        
-        x = 0.55;
-
-        y = Math.pow((Math.pow((Math.asin(x)),2))+
-                     (Math.pow((Math.acos(x)),4)),
-                     3) ;
-        System.out.println("x="+x+" , y="+y);
-        
-        //-------------------------------------------------------------
-        
-        
-        x = 0.6;
-
-        y = Math.pow((Math.pow((Math.asin(x)),2))+
-                     (Math.pow((Math.acos(x)),4)),
-                     3) ;
-        System.out.println("x="+x+" , y="+y);
-        
 
     }
+
+    private double calcFunction(double xlocal) {
+        double y = Math.pow((Math.pow((Math.asin(xlocal)), 2))
+                + (Math.pow((Math.acos(xlocal)), 4)),
+                3);
+        return y;
+    }
+
+    public void taskASimple() {
+        double xn = 0.26;
+        double xk = 0.66;
+        double dx = 0.08;
+
+        for (double x = xn; x <= xk; x = x + dx) {
+            double y = calcFunction(x);
+            System.out.println("x=" + x + ",y=" + y);
+        }
+    }
+
 }

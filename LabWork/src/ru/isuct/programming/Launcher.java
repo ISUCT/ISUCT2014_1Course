@@ -15,7 +15,11 @@ public class Launcher {
      */
     public static void main(String[] args) {
         Calc myCalc = new Calc();
-        myCalc.taskBSimple();
-        
+//        myCalc.taskBSimple();
+        System.out.println("-----------------------");
+        myCalc.taskASimple();
+        System.out.println("---------------------");
+        double[] x = {0.1,0.35,0.4,0.55,0.6,};
+        myCalc.taskBImproved(x);
     }
 }
