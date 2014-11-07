@@ -64,7 +64,6 @@ public class Calc {
 
     }
 
-
     public void taskASimple() {
         //Вычисляем таблицу значений функции
         //((x-a)^2)^(1/3) + (x+b)^ (1/5)
@@ -82,7 +81,22 @@ public class Calc {
         for (double x = xn; x <= xk; x = x + dx) {
             double y = calcFunction(a, b, x);
             System.out.println("x=" + x + " , y=" + y);
-            
+
+        }
+    }
+
+    public void taskBImproved(double a, double b, double[] x) {
+        //Вычисляем таблицу значений функции
+        //((x-a)^2)^(1/3) + (x+b)^ (1/5)
+        // y = ----------------------------
+        // ((x^2)-(a+b)^2)^(1/9)
+        // для точек :
+        for (int i = 0; i < x.length; i++) {
+
+            double y = calcFunction(a, b, x[i]);
+            System.out.println("x=" + x[i] + " , y=" + y);
+
+
         }
     }
 }
