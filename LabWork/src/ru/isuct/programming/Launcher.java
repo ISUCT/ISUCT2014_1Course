@@ -7,7 +7,7 @@ package ru.isuct.programming;
 
 /**
  *
- * @author jskonst
+ * 
  */
 public class Launcher {
     
@@ -15,6 +15,7 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
       SimpleTypes eTypes = new SimpleTypes ();
       eTypes.demo();
       SimpleArray eArray = new SimpleArray ();
@@ -25,5 +26,13 @@ public class Launcher {
       
       myCalc.TaskASimple();
         // TODO code application logic here
+
+      Player panasonic = new Player();
+      panasonic.setName("Panasonic");
+      panasonic.sayHello();
+      panasonic.setTitleofsong(980665);
+      int tos = panasonic.getTitleofsong();
+      System.out.println("Titleofsong = "+ tos);
+
     }
 }
