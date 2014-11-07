@@ -26,6 +26,6 @@ public class Launcher {
 //        System.out.println("Speed = "+ spd);
         Calc myCalc = new Calc();
         myCalc.taskBSimple();
-        
+        myCalc.taskASimple();
     }
 }
