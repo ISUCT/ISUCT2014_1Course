@@ -22,6 +22,8 @@ public class Launcher {
      
       Calc myCalc = new Calc();
       myCalc.taskBSimple();
+      
+      myCalc.TaskASimple();
         // TODO code application logic here
     }
 }
