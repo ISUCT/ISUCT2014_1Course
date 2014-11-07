@@ -78,4 +78,13 @@ public class Calc {
             
         }
     }
-}
+    
+    public void taskBImproved(double a, double b, double[] x) {
+           for (int i = 0; i < x.length; i+=1) {
+            double y = calcFunction(a, b, x[i]);
+            System.out.println("x=" + x[i] + " , y=" + y);
+        }
+    }
+}   
+    
+
