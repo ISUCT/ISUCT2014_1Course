@@ -26,34 +26,50 @@ public class Calc {
         double a = 0.1;
         double b = 0.5;
         double x = 0.2;
-        double chisl = (a) + Math.pow((Math.tan(b * x)), 2);
-        double znamen = (b) + Math.pow((1 / Math.tan(a * x)), 2);
-        double y = chisl / znamen;
+        double y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
-        
+
         x = 0.3;
-        chisl = (a) + Math.pow((Math.tan(b * x)), 2);
-        znamen = (b) + Math.pow((1 / Math.tan(a * x)), 2);
-        y = chisl / znamen;
+        y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
-        
+
         x = 0.44;
-        chisl = (a) + Math.pow((Math.tan(b * x)), 2);
-        znamen = (b) + Math.pow((1 / Math.tan(a * x)), 2);
-        y = chisl / znamen;
+        y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
-        
+
         x = 0.6;
-        chisl = (a) + Math.pow((Math.tan(b * x)), 2);
-        znamen = (b) + Math.pow((1 / Math.tan(a * x)), 2);
-        y = chisl / znamen;
+        y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
-        
+
         x = 0.56;
-        chisl = (a) + Math.pow((Math.tan(b * x)), 2);
-        znamen = (b) + Math.pow((1 / Math.tan(a * x)), 2);
-        y = chisl / znamen;
+        y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
-       
+
+    }
+
+    private double calcFunction(double aLocal, double bLocal, double xLocal) {
+        double chisl = (aLocal) + Math.pow((Math.tan(bLocal * xLocal)), 2);
+        double znamen = (bLocal) + Math.pow((1 / Math.tan(aLocal * xLocal)), 2);
+        double result = chisl / znamen;
+        return result;
+    }
+
+    public void taskASimple() {
+        // Вычисляем таблицу значений функции
+        //   (a+(tg)^2*b*x)
+        //y=  -------------
+        //   (B+(ctg)^2*a*x)
+        // a = 0.1
+        // b = 0.5
+        double a = 0.1;
+        double b = 0.5;
+        double xn = 0.15;
+        double xk = 1.37;
+        double dx = 0.25;
+
+        for (double x = xn; x <= xk; x = x + dx) {// x= x + dx === x+=dx
+            double y = calcFunction(a, b, x);
+            System.out.println("x=" + x + " , y=" + y);
+        }
     }
 }

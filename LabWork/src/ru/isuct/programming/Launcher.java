@@ -17,6 +17,9 @@ public class Launcher {
         
         Calc myCalc = new Calc();
         myCalc.taskBSimple();
-        // TODO code application logic here
+        System.out.println("---------------------");
+       myCalc.taskASimple();
+       
+       
     }
 }
