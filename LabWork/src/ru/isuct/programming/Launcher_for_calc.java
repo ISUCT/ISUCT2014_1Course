@@ -7,12 +7,9 @@ package ru.isuct.programming;
 
 /**
  *
- * @author jskonst
+ * @author Администратор
  */
-public class Launcher {
-    /**
-     * @param args the command line arguments
-     */
+public class Launcher_for_calc {
     public static void main(String[] args) {
         Calc myCalc = new Calc();
 //        myCalc.taskBSimple();
@@ -22,4 +19,5 @@ public class Launcher {
         double[] x = {0.1,0.35,0.4,0.55,0.6,};
         myCalc.taskBImproved(x);
     }
+    
 }
