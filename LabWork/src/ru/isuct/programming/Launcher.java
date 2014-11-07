@@ -25,6 +25,9 @@ public class Launcher {
       myCalc.taskBSimple();
       
       myCalc.TaskASimple();
+      
+      double[] x = {0.1,0.3,0.4,0.45,0.65};
+      myCalc.taskBImproved(2.2, 3, x);
         // TODO code application logic here
 
       Player panasonic = new Player();
