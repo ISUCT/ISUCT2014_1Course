@@ -38,7 +38,7 @@ public class Calc {
 
     }
 
-    private double calcFunction(double a, double b, double x) {
+    public double calcFunction(double a, double b, double x) {
         double chisl = Math.log(Math.abs(Math.pow(b, 2) - Math.pow(x, 2))) / Math.log(a);
         double znamen = Math.pow(Math.abs(Math.pow(x, 2) - Math.pow(a, 2)), (1 / 5));
         double y = chisl / znamen;
@@ -69,6 +69,9 @@ public class Calc {
         for (int i = 0; i < x.length; i+=1) {
         double y = calcFunction(a, b, x [i]);
         System.out.println("x=" + x[i] + " , y=" + y);
+        
+        
+        
     }
 }
 }
