@@ -12,7 +12,7 @@ package ru.isuct.programming;
 public class ForTests {
     
     public int mySumm(int a, int b){
-        int c = a + b;
+        int c = Math.abs(a) + Math.abs(b);
         return c;
     }
 }
