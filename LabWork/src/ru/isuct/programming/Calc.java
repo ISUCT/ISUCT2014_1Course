@@ -47,7 +47,7 @@ public class Calc {
 
     }
 
-    private double calcFunction(double a, double b, double x) {
+    public double calcFunction(double a, double b, double x) {
         double chisl = Math.abs(a - b * x);
         double znamen = Math.pow((Math.log(x)), 3);
         double result = Math.pow(chisl / znamen, (1 / 2.0));
