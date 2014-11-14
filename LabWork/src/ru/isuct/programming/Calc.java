@@ -29,7 +29,7 @@ public class Calc {
         }
     }
 
-    private double calcFunction(double a, double b, double x) {
+    public double calcFunction(double a, double b, double x) {
         double y = Math.pow((Math.log(Math.pow(a, 2) + x)), 2);
         return y;
     }
