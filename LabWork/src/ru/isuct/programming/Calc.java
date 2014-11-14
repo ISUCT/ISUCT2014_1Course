@@ -24,7 +24,7 @@ public class Calc {
 
     }
 
-    private double calcFunction(double xlocal) {
+    public double calcFunction(double xlocal) {
         double y = Math.pow((Math.pow((Math.asin(xlocal)), 2))
                 + (Math.pow((Math.acos(xlocal)), 4)),
                 3);
