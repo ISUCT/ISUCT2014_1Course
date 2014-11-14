@@ -60,4 +60,14 @@ public class fortestTest {
         int result = instance.mySumm(a, b);
         assertEquals(expResult, result);
     }
+    @Test
+    public void testMySummNegative2() {
+        System.out.println("mySumm");
+        int a = -9;
+        int b = -3;
+        fortest instance = new fortest();
+        int expResult = 12;
+        int result = instance.mySumm(a, b);
+        assertEquals(expResult, result);
+    }
 }
