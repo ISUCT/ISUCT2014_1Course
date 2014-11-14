@@ -76,7 +76,7 @@ public class Calc {
 
     }
 
-    private double calcFunction(double aLocal, double bLocal, double xLocal) {
+    public double calcFunction(double aLocal, double bLocal, double xLocal) {
         double chisl = Math.pow(Math.sin(xLocal), 2) + Math.pow((aLocal * xLocal - bLocal), (1 / 3));
         double znamen = (Math.log(xLocal)) / (Math.log(5));
         double result = chisl / znamen;
