@@ -85,4 +85,15 @@ public class Calc {
         }
 
     }
+    public int someMethod(int a, int b){
+	if (a>b){
+		return a+1;
+	}
+	if (a==b){
+		return 1;
+	}
+	if (b<a){
+		return b-1;
+	}
+}
 }
