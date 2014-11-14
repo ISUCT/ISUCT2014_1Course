@@ -20,7 +20,7 @@ public class Calc {
         // для точек:
         // x = 0.2
         // x = 0.3
-        // x = 0.44
+         // x = 0.44
         // x = 0.6
         // x = 0.56
         double a = 0.1;
@@ -47,7 +47,7 @@ public class Calc {
 
     }
 
-    private double calcFunction(double aLocal, double bLocal, double xLocal) {
+    public double calcFunction(double aLocal, double bLocal, double xLocal) {
         double chisl = (aLocal) + Math.pow((Math.tan(bLocal * xLocal)), 2);
         double znamen = (bLocal) + Math.pow((1 / Math.tan(aLocal * xLocal)), 2);
         double result = chisl / znamen;
