@@ -42,7 +42,7 @@ public class Calc {
         System.out.println("x=" + x + " , y=" + y);
     }
 
-    private double calcFunction(double a, double b, double x) {
+    public double calcFunction(double a, double b, double x) {
         double chisl = (Math.pow(a, x) - Math.pow(b, x)) * Math.pow(a * b, 1 / 3);
         double znamen = (Math.log(a / b)) / (Math.log(10));
         double y = chisl / znamen;
