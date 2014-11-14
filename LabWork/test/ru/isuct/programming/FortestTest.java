@@ -63,5 +63,15 @@ public class FortestTest {
         int result = instance.mySumm(a, b);
         assertEquals(expResult, result);
     }
+    @Test
+        public void testMySummNegative2() {
+        System.out.println("mySummNegative2");
+        int a = -2;
+        int b = -3;
+        Fortest instance = new Fortest();
+        int expResult = 5;
+        int result = instance.mySumm(a, b);
+        assertEquals(expResult, result);
     
+    }
 }
