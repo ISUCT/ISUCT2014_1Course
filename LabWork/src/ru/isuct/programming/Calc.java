@@ -34,7 +34,7 @@ public class Calc {
         System.out.println("x=" + x + " , y=" + y);
     }
 
-    private double calcFunction(double a, double b, double x) {
+    public double calcFunction(double a, double b, double x) {
         double y = Math.pow(Math.asin(x), a) + (Math.pow(Math.acos(x), b));
         System.out.println("x=" + x + " , y=" + y);
         return y;
