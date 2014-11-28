@@ -13,7 +13,8 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author stud_5
+
+ * @author Stud_5
  */
 public class CalcTest {
     
@@ -44,7 +45,7 @@ public class CalcTest {
         System.out.println("taskBSimple");
         Calc instance = new Calc();
         instance.taskBSimple();
-      
+
     }
 
     /**
@@ -53,15 +54,27 @@ public class CalcTest {
     @Test
     public void testCalcFunction() {
         System.out.println("calcFunction");
-        double a = 0.8;
-        double b = 0.4;
-        double x = 1.88;
+
+        double aLocal = 0.1;
+        double bLocal = 0.5;
+        double xLocal = 0.2;
         Calc instance = new Calc();
-        double expResult = 2.0;
-        double result = instance.calcFunction(a, b, x);
-        assertEquals(expResult, result, 0.001);
+        double expResult = 4.402975341621186E-5;
+        double result = instance.calcFunction(aLocal, bLocal, xLocal);
+        assertEquals(expResult, result, 0.0);
+      
     }
-}
-   
+
+    /**
+     * Test of taskASimple method, of class Calc.
+     */
+    
+    }
+
+    /**
+     * Test of taskBImproved method, of class Calc.
+     */
+    
+
     
 

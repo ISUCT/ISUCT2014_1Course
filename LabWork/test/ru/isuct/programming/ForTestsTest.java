@@ -13,7 +13,8 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author stud_5
+
+ * @author Stud_5
  */
 public class ForTestsTest {
     
@@ -42,22 +43,25 @@ public class ForTestsTest {
     @Test
     public void testMySumm() {
         System.out.println("mySumm");
-        int a = 2;
-        int b = 3;
+
+        int a = 8;
+        int b = 4;
         ForTests instance = new ForTests();
-        int expResult = 5;
+        int expResult = 12;
         int result = instance.mySumm(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-     
+
     }
     @Test
     public void testMySummNegative() {
         System.out.println("mySumm");
-        int a = -2;
-        int b = 3;
+
+        int a = -4;
+        int b = 4;
         ForTests instance = new ForTests();
-        int expResult = 5;
+        int expResult = 8;
+
         int result = instance.mySumm(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -65,12 +69,12 @@ public class ForTestsTest {
     @Test
     public void testMySummBothNegative() {
         System.out.println("mySumm");
-        int a = -2;
-        int b = -6;
+        int a = -8;
+        int b = -4;
         ForTests instance = new ForTests();
-        int expResult = 8;
+        int expResult = 12;
         int result = instance.mySumm(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-}
+    }
 }

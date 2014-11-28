@@ -6,13 +6,11 @@ package ru.isuct.programming;
 
 /**
  *
- * @author stud_5
+ * @author Stud_5
  */
 public class ForTests {
-    public int mySumm( int a, int b){
-        int c = Math.abs(a) + Math.abs(b);
-        return c ;
-        
-    }
-    
-}
+      public int mySumm(int a, int b) {   
+         int c = Math.abs(a) + Math.abs(b);
+         return c;
+  }
+}   
