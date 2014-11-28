@@ -44,7 +44,7 @@ public int someMethod(int a, int b){
 Какими будут значения переменной b?
 
 a. b=someMethod(5,5);
-b. b=someMethod(3,5);
+b. b=someMethod(3,5);4
 c. b=someMethod(5,9);
 
 
