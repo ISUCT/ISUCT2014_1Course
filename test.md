@@ -1,4 +1,4 @@
-# Тест
+﻿# Тест
 1.
 Выберите, какие объявления переменных является правильным в Java?
 a. Dog a;
@@ -6,7 +6,7 @@ b. Int 1B;
 c. int myVar;
 d. boolean Some;
 
-Ответ:
+Ответ:c
 
 2.
 Какие из следующих выражений являются верными
@@ -15,7 +15,7 @@ b. int b = (int)"5";
 c. int c = (int) 3.5;
 d. boolean a = 0;
 
-Ответ:
+Ответ:a
 
 3.
 Дан класс Calc
@@ -26,7 +26,7 @@ c. public void SomeMethod();
 d. public boolean someMethod(){ return false;}
 e. public boolean someMethod(int a){ return false;}
 
-Ответ:
+Ответ:c,e
 
 4.
 Дана функция:
@@ -43,9 +43,9 @@ public int someMethod(int a, int b){
 }
 Какими будут значения переменной b?
 
-a. b=someMethod(5,5);
-b. b=someMethod(3,5);
-c. b=someMethod(5,9);
+a. b=someMethod(5,5);6
+b. b=someMethod(3,5);4
+c. b=someMethod(5,9);3
 
 
 Ответ:
@@ -74,4 +74,4 @@ class dog {
 }
 }
 
-Ответ:
+Ответ:a
