@@ -57,7 +57,7 @@ public class CalcTest {
         double b = 1.1;
         double x = 0.1;
         Calc instance = new Calc();
-        double expResult = 0.26303440583379406;
+        double expResult = 3.997765086620711;
         double result = instance.calcFunction(a, b, x);
         assertEquals(expResult, result, 0.001);
         

@@ -12,8 +12,7 @@ package ru.isuct.programming;
 public class Player {
     private String name = "";
     private int titleofsong;
-    private int numberofbuttons;
-    private int size;
+    private int numberofbuttons;    private int size;
     private String greeting = "Hello, man";
     
     public void setName(String aName){
