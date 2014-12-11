@@ -7,30 +7,35 @@ package ru.isuct.programming;
 
 /**
  *
- * @author jskonst
+ * 
  */
 public class Launcher {
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        Rocket vostok = new Rocket();
-//        vostok.setName("Vostok");
-//        vostok.sayHello();
-//        vostok.setSpeed(23);
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        vostok.setSpeed(50);
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        int spd = vostok.getSpeed();
-//        System.out.println("Speed = "+ spd);
-        Calc myCalc = new Calc();
-        myCalc.taskBSimple();
-        System.out.println("---------------------");
-        myCalc.taskASimple();
-        System.out.println("---------------------");
-        double[] x = {1,2,3,4,5,6,7};
-        myCalc.taskBImproved(2.2, 3, x);
-        
+
+      SimpleTypes eTypes = new SimpleTypes ();
+      eTypes.demo();
+      SimpleArray eArray = new SimpleArray ();
+      eArray.demo ();
+     
+      Calc myCalc = new Calc();
+      myCalc.taskBSimple();
+      
+      myCalc.TaskASimple();
+      
+      double[] x = {0.1,0.3,0.4,0.45,0.65};
+      myCalc.taskBImproved(2.2, 3, x);
+        // TODO code application logic here
+
+      Player panasonic = new Player();
+      panasonic.setName("Panasonic");
+      panasonic.sayHello();
+      panasonic.setTitleofsong(980665);
+      int tos = panasonic.getTitleofsong();
+      System.out.println("Titleofsong = "+ tos);
+
     }
 }
