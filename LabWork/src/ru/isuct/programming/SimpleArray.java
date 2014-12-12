@@ -22,5 +22,8 @@ public class SimpleArray {
            System.out.println("arr["+x+" = "+ arr[x]);
          x = x + 1; 
          }
+
+
     }
+    
 }

@@ -13,7 +13,7 @@ public class Car {
   private int speed;
   private int memory;
   private String greeting = "vzvzvz";
-  
+  private int numberofwheels;
     
      public void setName(String aName){
          name = aName;
@@ -32,6 +32,12 @@ public class Car {
      public void sayHello(){
          System.out.println(name + " " + greeting );
      }
-    
+     public void setNumberofwheels(int aNumberofwheels){
+        numberofwheels = aNumberofwheels;
+    }
+    public int getNumberofwheels(){
+        return numberofwheels;
+    }
    
  }
+

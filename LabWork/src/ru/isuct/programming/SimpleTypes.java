@@ -29,6 +29,7 @@ public class SimpleTypes {
           double gJ = 56.7;
           System.out.println("double" + gJ);
           
+
           
     }
     
