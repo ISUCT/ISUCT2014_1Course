@@ -49,8 +49,39 @@ public class Calc {
         return y;
     }
 
+    public void taskA(double a, double b, double xn, double xk, double xd) {
+// Вычисляем таблицу значений функции 
+//    a^x-b^x
+//y=-----------*(a*b)^1/3
+//   log(a/b)по основанию 10
+// a = 0.4
+// b = 0.8
+// для точек:
+// x = 4.48
+// x = 3.56
+// x = 2.78
+// x = 5.28
+// x = 3.21
+        for (double x = xn; x <= xk; x = x + xd) {
+            double y = calcFunction(a, b, x);
+            System.out.println("x=" + x + " , y=" + y);
+        }
+    }
 
-    public void taskASimple() {
+    public double[] taskB(double a, double b, double[] x) {
+// Вычисляем таблицу значений функции 
+//    a^x-b^x
+//y=-----------*(a*b)^1/3
+//   log(a/b)по основанию 10
+// для точек передаваемых в массиве x
+        double[] y = new double[x.length];
+        for (int i = 0; i < x.length; i+=1) {
+             y[i] = calcFunction(a, b, x[i]);
+        }
+        return y;
+    }
+
+    public void taskA() {
 // Вычисляем таблицу значений функции 
 //    a^x-b^x
 //y=-----------*(a*b)^1/3
@@ -71,19 +102,7 @@ public class Calc {
         for (double x = xn; x <= xk; x = x + xd) {
             double y = calcFunction(a, b, x);
             System.out.println("x=" + x + " , y=" + y);
+
         }
     }
-        
-    public void taskBImproved(double a, double b, double[] x) {
-// Вычисляем таблицу значений функции 
-//    a^x-b^x
-//y=-----------*(a*b)^1/3
-//   log(a/b)по основанию 10
-// для точек передаваемых в массиве x
-for (int i = 0; i < x. length; i++){
-double y = calcFunction(a, b, x[i]);
-System.out.println("x=" + x[i] + " , y=" + y);
-    }
-    }
 }
-        

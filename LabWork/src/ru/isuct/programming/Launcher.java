@@ -29,4 +29,5 @@ public class Launcher {
     System.out.println("---------------------");
     double[] x = {1,2,3,4,5,6,7};
     myCalc.taskBImproved(2.2, 3, x);}
+    
 }
