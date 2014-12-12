@@ -14,14 +14,25 @@ public class Launcher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        // TODO code application logic here
+        // TODO code application logic here
+//        Rocket vostok = new Rocket();
+//        vostok.setName("Vostok");
+//        vostok.sayHello();
+//        vostok.setSpeed(23);
+//        System.out.println("Fuel = "+ vostok.getFuel());
+//        vostok.setSpeed(50);
+//        System.out.println("Fuel = "+ vostok.getFuel());
+//        System.out.println("Fuel = "+ vostok.getFuel());
+//        int spd = vostok.getSpeed();
+//        System.out.println("Speed = "+ spd);
         Calc myCalc = new Calc();
         myCalc.taskBSimple();
         System.out.println("---------------------");
-       myCalc.taskASimple();
-       System.out.println("---------------------");
-double[] x = {1,2,3,4,5,6,7};
-myCalc.taskBImproved(2.2, 3, x);
-       
+        myCalc.taskASimple();
+        System.out.println("---------------------");
+        double[] x = {1,2,3,4,5,6,7};
+        myCalc.taskBImproved(2.2, 3, x);
+        
     }
 }
