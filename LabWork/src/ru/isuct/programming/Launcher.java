@@ -7,25 +7,21 @@ package ru.isuct.programming;
 
 /**
  *
- * @author jskonst
+ * 
  */
 public class Launcher {
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        Rocket vostok = new Rocket();
-//        vostok.setName("Vostok");
-//        vostok.sayHello();
-//        vostok.setSpeed(23);
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        vostok.setSpeed(50);
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        System.out.println("Fuel = "+ vostok.getFuel());
-//        int spd = vostok.getSpeed();
-//        System.out.println("Speed = "+ spd);
-        Calc myCalc = new Calc();
-        myCalc.taskBSimple();
-        
+
+      SimpleTypes eTypes = new SimpleTypes ();
+      eTypes.demo();
+      SimpleArray eArray = new SimpleArray ();
+      eArray.demo ();
+      
+      
+
     }
 }
