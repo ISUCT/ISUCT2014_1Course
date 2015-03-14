@@ -52,6 +52,14 @@ public class Calc {
             System.out.println("x=" + x + " , y=" + y);
         }
     }
+    
+        public void TaskASimple(double a, double b, double xn, double dx, double xk) {
+        
+        for (double x = xn; x <= xk; x += dx) {
+            double y = calcFunction(a, b, x);
+            System.out.println("x=" + x + " , y=" + y);
+        }
+    }
 
     public void taskImproved(double a, double b, double[] x) {
         for (int i = 0; i < x.length; i += 1) {
