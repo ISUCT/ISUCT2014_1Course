@@ -60,7 +60,7 @@ public class Calc {
         }
     }
 
-    private double calcFunction(double aLocal, double bLocal, double xLocal) {
+    public double calcFunction(double aLocal, double bLocal, double xLocal) {
         double chisl = Math.log10(Math.pow((xLocal), 2) - 1);
         double znamen = (Math.log(aLocal * (Math.pow((xLocal), 2)) - bLocal) / Math.log(5));
         double y = chisl / znamen;
