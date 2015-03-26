@@ -14,7 +14,7 @@ public class Launcher_for_calc {
         Calc myCalc = new Calc();
 //        myCalc.taskBSimple();
         System.out.println("-----------------------");
-        myCalc.taskASimple();
+        myCalc.taskASimple(double xn, double xk, double dx);
         System.out.println("---------------------");
         double[] x = {0.1,0.35,0.4,0.55,0.6,};
         myCalc.taskBImproved(x);

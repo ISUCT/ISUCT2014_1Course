@@ -29,10 +29,8 @@ public class Calc {
         return y;
     }
 
-    public void taskASimple() {
-        double xn = 0.26;
-        double xk = 0.66;
-        double dx = 0.08;
+    public void taskASimple(double xn, double xk, double dx) {
+
 
         for (double x = xn; x <= xk; x = x + dx) {
             double y = calcFunction(x);
