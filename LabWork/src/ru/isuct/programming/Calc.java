@@ -1,4 +1,4 @@
-package ru.isuct.programming;
+﻿package ru.isuct.programming;
 
 /*
  * To change this template, choose Tools | Templates
