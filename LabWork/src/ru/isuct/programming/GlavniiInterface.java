@@ -4,6 +4,8 @@
  */
 package ru.isuct.programming;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author stud_17
@@ -145,7 +147,10 @@ public class GlavniiInterface extends javax.swing.JFrame {
         double xk = Double.parseDouble(jTextField4.getText());
         double dx = Double.parseDouble(jTextField5.getText());
         Calc my = new Calc(); 
-        my.TaskASimple(a,b,xn,dx,xk);
+        ArrayList<Double> y=my.TaskASimple(a,b,xn,dx,xk);
+        for (int i=0;i<y.size();i++){
+            System.out.println(y.get(i));
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
