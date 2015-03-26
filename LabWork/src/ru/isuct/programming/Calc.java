@@ -46,11 +46,11 @@ public class Calc {
     }
 
     public void TaskASimple() {
-        double a = 2.2;
-        double b = 5.1;
-        double xn = 0.03;
-        double xk = 5.01;
-        double dx = 0.6;
+        double a = 0.4;
+        double b = 0.6;
+        double xn = 0.8;
+        double xk = 1.0;
+        double dx = 1.2;
 
         for (double x = xn; x <= xk; x += dx) {
             double y = calcFunction(a, b, x);
@@ -62,7 +62,13 @@ public class Calc {
 
 
     }
-
+public void TaskASimple(double a,double b,double xn,double xk,double dx) {
+    for (double x=xn; x <=xk; x +=dx){
+        double y = calcFunction (a, b, x);
+        System.out.println("x=" + x + ", y=" + y);
+       
+    }
+}
     public void taskBImproved(double a, double b, double [] x) {
         for (int i = 0; i < x.length; i+=1) {
         double y = calcFunction(a, b, x [i]);
