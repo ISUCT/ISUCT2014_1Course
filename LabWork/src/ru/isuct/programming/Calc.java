@@ -4,6 +4,8 @@
  */
 package ru.isuct.programming;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author stud_5
@@ -57,13 +59,19 @@ public class Calc {
         for (double x = xn; x <= xk; x += dx) {
             double y = calcFunction(a, b, x);
             System.out.println("x=" + x + " , y=" + y);
+             
         }
+       
     }
-    public void TaskASimple(double a, double b, double xn, double xk, double dx) {
+     
+    public ArrayList TaskASimple(double a, double b, double xn, double xk, double dx) {
+       ArrayList y = new ArrayList();
         for (double x = xn; x <= xk; x += dx) {
-            double y = calcFunction(a, b, x);
-            System.out.println("x=" + x + " , y=" + y);
+            y.add(calcFunction(a, b, x));
+            
         }
+        return y;
+               
     }
     public void taskBImproved(double a, double b, double [] x) {
         for (int i = 0; i < x.length; i+=1) {
