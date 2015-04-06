@@ -1,44 +1,87 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 package ru.isuct.programming;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author AlexeyRovo
+ * @author stud_5
  */
 public class Calc {
-    // y = (lg^2(a+x))/ (a+x)^2  
-    // a = 2.0 xn = 1.2 xk = 4.2 dx = 0.6 x1 = 1.16 x2 = 1.32 x3 = 1.47 x4 = 1.65 x5 = 1.93
-    public void taskBImproved(double[] x) {
-       
 
-        for (int i = 0; i < x.length; i++) {
-            double y = calcFunction(x[i]);
-            System.out.println("x=" + i + " , y=" + y);
-        }
-        //----------------------------------------------
+    public void taskBSimple() {
+        double a = 2.0;
+        double b = 1.1;
+        double x = 0.1;
+        double chisl = Math.log(Math.abs(Math.pow(b, 2) - Math.pow(x, 2))) / Math.log(a);
+        double znamen = Math.pow(Math.abs(Math.pow(x, 2) - Math.pow(a, 2)), (1 / 5));
+        double y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
+        x = 3;
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
+        x = 0.4;
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
+        x = 0.45;
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
+        x = 0.65;
+        y = calcFunction(a, b, x);
+        System.out.println("x=" + x + " , y=" + y);
+
 
     }
 
-    public double calcFunction(double xlocal) {
-        double alocal = 2.0;
-        double y = Math.pow(Math.log(alocal+xlocal), 2)/Math.pow((alocal+xlocal), 2);
+    public double calcFunction(double a, double b, double x) {
+        double chisl = Math.log(Math.abs(Math.pow(b, 2) - Math.pow(x, 2))) / Math.log(a);
+        double znamen = Math.pow(Math.abs(Math.pow(x, 2) - Math.pow(a, 2)), (1 / 5));
+        double y = chisl / znamen;
         return y;
+
+
     }
 
-    public void taskASimple() {
-        double xn = 1.2;
-        double xk = 4.2;
-        double dx = 0.6;
+    public void TaskASimple() {
+        double a = 2.0;
+        double b = 1.1;
+        double xn = 0.08;
+        double xk = 1.08;
+        double dx = 0.2;
 
-        for (double x = xn; x <= xk; x = x + dx) {
-            double y = calcFunction(x);
-            System.out.println("x=" + x + ",y=" + y);
+        for (double x = xn; x <= xk; x += dx) {
+            double y = calcFunction(a, b, x);
+            System.out.println("x=" + x + " , y=" + y);
+             
         }
+       
     }
-
-    
+     
+    public ArrayList TaskASimple(double a, double b, double xn, double xk, double dx) {
+       ArrayList y = new ArrayList();
+        for (double x = xn; x <= xk; x += dx) {
+            y.add(calcFunction(a, b, x));
+            
+        }
+        return y;
+               
+    }
+    public void taskBImproved(double a, double b, double [] x) {
+        for (int i = 0; i < x.length; i+=1) {
+        double y = calcFunction(a, b, x [i]);
+        System.out.println("x=" + x[i] + " , y=" + y);
+        
+        
+        
+        
+        
+    }
+}
 }
