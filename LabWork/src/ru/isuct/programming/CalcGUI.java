@@ -144,8 +144,7 @@ double xn = Double.parseDouble(jTextField3.getText());
 double xk = Double.parseDouble(jTextField4.getText());
 double dx = Double.parseDouble(jTextField5.getText());
 Calc my = new Calc();
-my.TaskASimple(a,b,xn,xk,dx);
-ArrayList <Double> y= my.TaskASimple(a, b, xn, dx, xk);
+ArrayList <Double> y= my.TaskASimple(a, b, xn, xk, dx);
 
 for (double i : y) {
         jTextArea1.append(String.format("y=%2.2f", i )+"\r\n");
