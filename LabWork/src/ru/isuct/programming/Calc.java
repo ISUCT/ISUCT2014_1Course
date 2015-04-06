@@ -1,5 +1,7 @@
 package ru.isuct.programming;
 
+import java.util.ArrayList;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -57,8 +59,8 @@ public class Calc {
     }
 
     public double calcFunction(double a, double b, double x) {
-        double chisl = Math.pow((x - a), (1 / 3)) + Math.pow((x + b), (1 / 5));
-        double znamen = Math.pow(Math.pow(x, 2) - Math.pow((a + b), 2), (1 / 9));
+        double chisl = (double)Math.pow(Math.pow((x - a),2),(1.0/3.0)) + Math.pow(Math.abs(x + b), (1.0/5.0));
+        double znamen = (double)Math.pow(Math.pow(x, 2) - Math.pow((a + b), 2), (1.0 /9.0));
         double y = chisl / znamen;
         return y;
 
@@ -84,7 +86,15 @@ public class Calc {
 
         }
     }
-
+ public ArrayList<Double> taskASimple(double a, double b, double xn, double xk, double dx){
+     ArrayList<Double> y = new ArrayList<Double>();
+     for (double x = xn ; x <= xk; x+=dx){
+         y.add(calcFunction(a,b,x));
+         
+     }
+     return y;
+     
+ }
     public void taskBImproved(double a, double b, double[] x) {
         //Вычисляем таблицу значений функции
         //((x-a)^2)^(1/3) + (x+b)^ (1/5)
