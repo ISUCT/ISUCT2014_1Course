@@ -6,6 +6,9 @@
 package ru.isuct.programming;
 //y=(lg(x^2-1))/(log5(ax^2-b)
 //числитель (lg(x^2-1))
+
+import java.util.ArrayList;
+
 //знаменатель (log5(ax^2-b)
 //и все будет хорошо
 
@@ -45,7 +48,15 @@ public class Calc {
         y = calcFunction(a, b, x);
         System.out.println("x=" + x + " , y=" + y);
     }
-
+public ArrayList<Double> taskASimple (double a,double b,double xn,double xk,double dx){
+    ArrayList <Double> y=new ArrayList<Double>();
+    for (double x = xn; x <= xk; x = x + dx) { // x = x + dx === x+=dx
+            y.add(calcFunction(a, b, x));
+        }    
+    
+    return y;
+  
+}
     public void taskASimple() {
 
         double a = 1.1;
