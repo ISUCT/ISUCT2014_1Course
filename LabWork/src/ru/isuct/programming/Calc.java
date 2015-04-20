@@ -4,13 +4,14 @@
  */
 package ru.isuct.programming;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author stud_5
  */
-public class Calc {
+public class Calc implements Serializable {
 
     public void taskBSimple() {
         double a = 2.0;
