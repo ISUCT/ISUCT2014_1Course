@@ -4,6 +4,11 @@
  */
 package ru.isuct.programming;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -86,6 +91,11 @@ public class GlavniiInterface extends javax.swing.JFrame {
         });
 
         jButton3.setText("Восстановить");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -171,9 +181,9 @@ public class GlavniiInterface extends javax.swing.JFrame {
         double xn = Double.parseDouble(jTextField3.getText());
         double xk = Double.parseDouble(jTextField4.getText());
         double dx = Double.parseDouble(jTextField5.getText());
-        Calc my = new Calc(); 
-        ArrayList<Double> y=my.TaskASimple(a,b,xn,dx,xk);
-        for (int i=0;i<y.size();i++){
+        Calc my = new Calc();
+        ArrayList<Double> y = my.TaskASimple(a, b, xn, dx, xk);
+        for (int i = 0; i < y.size(); i++) {
             System.out.println(y.get(i));
             jTextArea2.append(Double.toString(y.get(i)));
         }
@@ -181,8 +191,31 @@ public class GlavniiInterface extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            FileWriter writer = new FileWriter("Foo.txt");
+           writer.write(jTextArea2.getText().toString()); 
+            writer.close(); 
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+ try{
+     File myFile = new File("Foo.txt");
+     FileReader fileReader = new FileReader(myFile);
+     BufferedReader reader = new BufferedReader(fileReader);
+     String line = null;
+     while ((line = reader.readLine()) != null){
+         System.out.println(line);
+     }
+     reader.close();
+     
+ }catch(Exception ex) {
+     ex.printStackTrace();
+ }
+ 
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
